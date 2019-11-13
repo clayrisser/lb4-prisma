@@ -1,0 +1,27 @@
+{
+  "name": "lb4-prisma",
+  "description": "loopback prisma integration",
+  "version": "0.0.0",
+  "files": [
+    "packages"
+  ],
+  "scripts": {
+    "bootstrap": "lerna bootstrap && npm run link",
+    "bootstrap:hoist": "lerna bootstrap --hoist && npm run link",
+    "clean": "lerna clean -y && git clean -fXd -e \\!node_modules -e \\!node_modules/**/*",
+    "clean:purge": "git clean -fXd",
+    "format": "lerna run format",
+    "keycloak": "cd example && docker-compose up",
+    "lerna": "lerna",
+    "link": "lerna link",
+    "lint": "lerna run lint",
+    "lint:fix": "lerna run lint:fix",
+    "ls": "lerna ls",
+    "publish": "lerna publish",
+    "test": "lerna run test"
+  },
+  "devDependencies": {
+    "lerna": "^3.14.1"
+  },
+  "license": "MIT"
+}

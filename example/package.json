@@ -15,6 +15,7 @@
     "build": "tsc",
     "build:watch": "tsc --watch",
     "clean": "rimraf dist *.tsbuildinfo",
+    "deploy": "prisma deploy",
     "docker:build": "docker build -t example .",
     "docker:run": "docker run -p 3000:3000 -d example",
     "eslint": "eslint .",
@@ -28,7 +29,7 @@
     "prettier:check": "npm run prettier:cli -- -l",
     "prettier:cli": "prettier \"**/*.ts\" \"**/*.js\"",
     "prettier:fix": "npm run prettier:cli -- --write",
-    "start": "npm run build && node -r source-map-support/register ."
+    "start": "sh ./start.sh"
   },
   "repository": {
     "type": "git"
@@ -51,7 +52,8 @@
     "@loopback/repository": "^1.15.4",
     "@loopback/rest": "^1.23.0",
     "@loopback/rest-explorer": "^1.4.4",
-    "lb4-prisma": "^0.0.0"
+    "lb4-prisma": "^0.0.0",
+    "prisma": "^1.34.10"
   },
   "devDependencies": {
     "@loopback/eslint-config": "^4.1.4",

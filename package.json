@@ -18,6 +18,7 @@
     "lint:fix": "lerna run lint:fix",
     "ls": "lerna ls",
     "publish": "lerna publish",
+    "start": "cd example && yarn start",
     "test": "lerna run test"
   },
   "devDependencies": {

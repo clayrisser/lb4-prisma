@@ -10,6 +10,7 @@
     "bootstrap:hoist": "lerna bootstrap --hoist && npm run link",
     "clean": "lerna clean -y && git clean -fXd -e \\!node_modules -e \\!node_modules/**/*",
     "clean:purge": "git clean -fXd",
+    "deploy": "cd example && npm run deploy",
     "format": "lerna run format",
     "keycloak": "cd example && docker-compose up",
     "lerna": "lerna",
@@ -22,6 +23,7 @@
     "test": "lerna run test"
   },
   "devDependencies": {
+    "@types/node": "^12.12.7",
     "lerna": "^3.14.1"
   },
   "license": "MIT"

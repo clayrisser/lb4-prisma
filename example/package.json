@@ -52,12 +52,14 @@
     "@loopback/repository": "^1.15.4",
     "@loopback/rest": "^1.23.0",
     "@loopback/rest-explorer": "^1.4.4",
+    "fs-extra": "^8.1.0",
     "lb4-prisma": "^0.0.0",
     "prisma": "^1.34.10"
   },
   "devDependencies": {
     "@loopback/eslint-config": "^4.1.4",
     "@loopback/testlab": "^1.9.4",
+    "@types/fs-extra": "^8.0.1",
     "@types/node": "^10.17.5",
     "@typescript-eslint/eslint-plugin": "^2.7.0",
     "@typescript-eslint/parser": "^2.7.0",
